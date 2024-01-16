@@ -209,9 +209,9 @@ const Contact = ({txt},ref) => {
         <Right>
           <form  ref={form} onSubmit={sendEmail}>
             <Title>Contact Us </Title>
-            <Inputs required placeholder="Name" name="name" />
+            <Inputs required type="text" placeholder="Name" name="name" />
             <Inputs required type="email" placeholder="Email" name="email" />
-            <Inputs required type="number" placeholder="Phone number" name="number" />
+            <Inputs required type="tel" placeholder="Phone number" name="number" />
             <Tarea required placeholder="Write your message" name="message" rows={5} />
             <Btn type="submit" value="Send">Submit</Btn>
             {succes &&
